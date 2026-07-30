@@ -1,13 +1,21 @@
-# Nilouh GitHub Pages starter
+# Nilouh storefront
 
-This folder is a complete static website. Before publishing, replace the text in `index.html`, especially `hello@nilouh.com`, with your own details.
+## Add your images
 
-## Publish with GitHub Pages
+Put your garment photos inside the `images` folder using these exact filenames:
 
-1. Create a new GitHub repository, for example `nilouh-site`.
-2. Upload every file in this folder to the repository's top level.
-3. In GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**; choose the `main` branch and the `/ (root)` folder, then save.
-5. After GitHub publishes the site, enter `nilouh.com` in the **Custom domain** box and follow GitHub's DNS instructions in GoDaddy.
+- `hero.jpg` — large homepage image (portrait image works best)
+- `gulnar-kurta.jpg`
+- `neel-coord.jpg`
+- `raahi-dupatta.jpg`
+- `atelier.jpg` — an image of your painting process or studio
 
-Your temporary address will be similar to `https://your-github-name.github.io/nilouh-site/`.
+The page will show a calm coloured placeholder until each photo is added. You can also use your own filenames: update the matching `src="images/..."` value in `index.html`.
+
+## Change products
+
+In `index.html`, update each product's name, fabric description, and price. Change `hello@nilouh.com` to your actual customer email address (or leave it if you use that address).
+
+## Publish
+
+Replace the files in your GitHub repository with this folder's contents. GitHub Pages will redeploy automatically in a minute or two.
