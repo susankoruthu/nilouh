@@ -4,8 +4,6 @@ document.querySelectorAll(".image-frame img").forEach((image) => {
 });
 document.querySelectorAll(".enquire").forEach((button) => {
   button.addEventListener("click", () => {
-    const subject = encodeURIComponent(`Enquiry: ${button.dataset.product}`);
-    const body = encodeURIComponent(`Hello Nilouh,\n\nI would like to know more about the ${button.dataset.product}.\n\nName:\nSize:\nQuestion:`);
-    window.location.href = `mailto:hello@nilouh.com?subject=${subject}&body=${body}`;
+    window.open("https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==", "_blank", "noopener");
   });
 });
