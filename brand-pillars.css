@@ -1,0 +1,11 @@
+/* Detailed six-column brand-pillar section. Loaded after style.css. */
+.value-grid { grid-template-columns: repeat(6, 1fr); }
+.value-grid > div { padding-left: 19px; padding-right: 19px; }
+.value-grid h3 { font-size: 21px; }
+.value-grid p, .value-grid ul { font-size: 11px; line-height: 1.6; }
+.value-grid ul { margin: 0; padding-left: 15px; color: var(--muted); }
+
+@media (max-width: 960px) and (min-width: 721px) {
+  .value-grid { grid-template-columns: repeat(3, 1fr); gap: 25px; }
+  .value-grid > div:nth-child(4) { border-left: 0; padding-left: 0; }
+}
