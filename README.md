@@ -10,6 +10,8 @@ Put your garment photos inside the `images` folder using these exact filenames:
 - `raahi-dupatta.jpg`
 - `atelier.jpg` — an image of your painting process or studio
 
+`nilouh-story-logo.jpg` is already included and is the supplied Nilouh Story logo.
+
 The page will show a calm coloured placeholder until each photo is added. You can also use your own filenames: update the matching `src="images/..."` value in `index.html`.
 
 ## Change products
