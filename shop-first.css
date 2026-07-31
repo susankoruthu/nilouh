@@ -1,0 +1,7 @@
+/* Homepage order: shop first, Nilouh Story afterwards. */
+main { display: flex; flex-direction: column; }
+.shop-categories { order: 1; }
+.collection { order: 2; }
+.hero { order: 3; }
+.values { order: 5; }
+.closing { order: 6; }

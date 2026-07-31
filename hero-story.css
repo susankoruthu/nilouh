@@ -1,0 +1,5 @@
+.hero-story { display: flex; flex-direction: column; justify-content: center; padding: 65px 12%; background: rgba(220, 239, 248, .74); color: var(--indigo); }
+.hero-story h2 { font-size: clamp(39px, 4vw, 58px); letter-spacing: -.05em; }
+.hero-story > p:not(.eyebrow) { margin: 17px 0 0; color: var(--muted); font-size: 12px; }
+.hero-story .text-link { align-self: flex-start; margin-top: 24px; }
+@media (max-width: 720px) { .hero-story { padding: 65px 9%; } }

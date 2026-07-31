@@ -1,0 +1,10 @@
+/* Keep the product list close to the collection heading. */
+.collection { padding-top: 58px; padding-bottom: 78px; }
+.collection-head { align-items: center; margin-bottom: 27px; }
+.collection-head .eyebrow { margin-bottom: 8px; }
+.collection-head h2 { font-size: clamp(36px, 3.4vw, 51px); }
+@media (max-width: 720px) { .collection { padding-top: 48px; padding-bottom: 62px; } }
+
+.shop-categories { padding-top: 32px; padding-bottom: 32px; }
+.shop-categories .category-card { min-height: 165px; }
+@media (max-width: 720px) { .shop-categories { padding-top: 34px; padding-bottom: 34px; } .shop-categories .category-card { min-height: 160px; } }

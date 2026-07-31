@@ -1,0 +1,17 @@
+.shop-categories { display: grid; grid-template-columns: 31% 1fr; gap: 48px; align-items: end; }
+.category-heading { padding-bottom: 7px; }
+.category-heading h2 { font-size: clamp(44px, 4.5vw, 66px); letter-spacing: -.055em; color: var(--indigo); }
+.category-heading > p:last-child { max-width: 260px; color: var(--muted); font-size: 12px; }
+.category-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.category-card { min-height: 290px; padding: 19px 16px; display: flex; flex-direction: column; color: var(--indigo); background: #d9e2e5; transition: transform .2s ease, box-shadow .2s ease; }
+.category-card:hover { transform: translateY(-5px); box-shadow: 0 9px 16px rgba(31, 46, 92, .13); }
+.category-card:nth-child(2) { background: #ded3c4; }
+.category-card:nth-child(3) { background: #becab5; }
+.category-card:nth-child(4) { background: #e6c8c5; }
+.category-card:nth-child(5) { background: #c9d0da; }
+.category-card span { color: var(--gold); font: 10px "DM Mono", monospace; }
+.category-card h3 { margin-top: auto; font-size: 25px; letter-spacing: -.045em; }
+.category-card p { margin: 6px 0 18px; font-size: 10px; color: var(--muted); }
+.category-card b { font-size: 10px; letter-spacing: .05em; text-transform: uppercase; }
+@media (max-width: 960px) { .shop-categories { display: block; } .category-heading { margin-bottom: 35px; } .category-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px) { .category-grid { grid-template-columns: repeat(2, 1fr); } .category-card { min-height: 225px; } }

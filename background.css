@@ -1,0 +1,11 @@
+/* Original Nilouh lotus-textile background, created from the supplied saree references. */
+body {
+  background-color: var(--ivory);
+  background-image: linear-gradient(rgba(235, 247, 253, .82), rgba(224, 240, 248, .90)), url("images/nilouh-lotus-background.png");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.hero { background: linear-gradient(rgba(231, 246, 253, .60), rgba(220, 239, 248, .64)), url("images/nilouh-lotus-background.png") center / cover; }
+.hero-art { background: rgba(222, 238, 235, .68); }

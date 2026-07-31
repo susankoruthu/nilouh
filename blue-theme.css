@@ -1,0 +1,26 @@
+/* Nilouh blue-only theme: mist, water-lily, slate and indigo. */
+:root {
+  --ivory: #eef7fb;
+  --blue: #77a9c7;
+  --indigo: #16355f;
+  --ink: #18334f;
+  --gold: #4d7fa8;
+  --sage: #a8c9da;
+  --rose: #c7deea;
+  --line: #c7deea;
+  --muted: #53728b;
+}
+body { background-color: #eef7fb; }
+.topline { background: #16355f; }
+.hero-art { background: linear-gradient(145deg, #dceff7, #9dc8dd); }
+.hero-art:before, .hero-art:after { background: rgba(238, 247, 251, .58); }
+.values { background: #e0f0f7; }
+.category-card, .category-card:nth-child(2), .category-card:nth-child(3), .category-card:nth-child(4), .category-card:nth-child(5) { background: #d9ebf4; }
+.category-card:nth-child(2) { background: #cae1ed; }
+.category-card:nth-child(3) { background: #bad7e7; }
+.category-card:nth-child(4) { background: #acd0e2; }
+.category-card:nth-child(5) { background: #9bc4dc; }
+.tone-clay, .tone-sage, .tone-ink, .tone-sand, .soft-blue, .soft-sage, .soft-rose { background: #d9ebf4; }
+.missing-image { background: #d9ebf4; color: #16355f; }
+.button.light { background: #8db9d2; color: #16355f; }
+.button.light:hover { background: #cbe5f1; }
