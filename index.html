@@ -16,51 +16,81 @@
     <link rel="icon" type="image/jpeg" href="images/nilouh-story-logo.jpg" />
     <link rel="apple-touch-icon" href="images/nilouh-story-logo.jpg" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="brand-pillars.css" />
-    <link rel="stylesheet" href="categories.css" />
-    <link rel="stylesheet" href="shop-first.css" />
-    <link rel="stylesheet" href="background.css" />
-    <link rel="stylesheet" href="blue-theme.css" />
-    <link rel="stylesheet" href="hero-story.css" />
-    <link rel="stylesheet" href="collection-compact.css" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {"@type": "Organization", "name": "Nilouh Story", "url": "https://nilouh.com/", "logo": "https://nilouh.com/images/nilouh-story-logo.jpg", "sameAs": ["https://www.instagram.com/nilouh.story"]},
-          {"@type": "WebSite", "name": "Nilouh Story", "url": "https://nilouh.com/", "description": "Hand-painted sarees, dupattas, churidar sets and kurta tops."}
-        ]
-      }
+      {"@context":"https://schema.org","@graph":[
+        {"@type":"Organization","name":"Nilouh Story","url":"https://nilouh.com/","logo":"https://nilouh.com/images/nilouh-story-logo.jpg","sameAs":["https://www.instagram.com/nilouh.story"]},
+        {"@type":"WebSite","name":"Nilouh Story","url":"https://nilouh.com/","description":"Hand-painted sarees, dupattas, churidar sets and kurta tops."}
+      ]}
     </script>
   </head>
   <body>
-    <div class="topline">Handmade wearable art · Limited creations · Made with love</div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="announcement" role="status">Hand-painted wearable art · Limited creations · Made with love</div>
+
     <header class="site-header">
-      <a href="#top" class="brand" aria-label="Nilouh Story home"><img src="images/nilouh-story-logo.jpg" alt="Nilouh Story logo" /></a>
-      <nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#story">Our story</a><a href="#craft">Craftsmanship</a></nav>
-      <a class="enquire-top" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire <span>↗</span></a>
+      <div class="header-inner">
+        <a href="index.html" class="brand" aria-label="Nilouh Story home">
+          <img src="images/nilouh-story-logo.jpg" alt="Nilouh Story" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="sr-only">Open menu</span><span aria-hidden="true">Menu</span>
+        </button>
+        <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+          <a href="#collection">Shop</a>
+          <a href="#story">Our story</a>
+          <a href="#custom-order">Custom order</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="header-cta" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy"><p class="eyebrow">Nilouh Story</p><h1>For the<br /><em>rare you.</em></h1><p>Handmade wearable art crafted slowly by women who believe elegance should feel personal, timeless and beautifully unique.</p><a class="button" href="#collection">Discover the collection <span>↓</span></a></div>
-        <section id="story" class="hero-story"><p class="eyebrow">Brand story</p><h2>Because some things deserve to exist only once.</h2><p>Nilouh Story was born from a shared love for art, textiles and timeless beauty. Created by three women—a daughter, mother and aunt—the brand grew from quiet afternoons of painting and draping fabrics.</p><p>Inspired by the softness of the blue water lily, each piece brings together hand-painted artistry, luxurious fabrics and thoughtful craftsmanship.</p><a class="text-link" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Meet the makers <span>→</span></a></section>
+    <main id="main-content">
+      <section id="collection" class="collection-intro section-shell" aria-labelledby="collection-title">
+        <div class="section-kicker"><span>01</span><p>Shop Nilouh</p></div>
+        <div class="collection-intro__heading"><h1 id="collection-title">Find the piece<br /><em>that feels like yours.</em></h1><p>Hand-painted clothing created in small quantities, for wardrobes with a story.</p></div>
+        <div class="category-grid">
+          <a class="category-card" href="sarees.html"><span>01</span><h2>Sarees</h2><p>Hand-painted drapes</p><b>Explore <i aria-hidden="true">→</i></b></a>
+          <a class="category-card" href="#custom-order"><span>02</span><h2>Dupattas &amp; Stoles</h2><p>Artful finishing touches</p><b>Enquire <i aria-hidden="true">→</i></b></a>
+          <a class="category-card" href="#custom-order"><span>03</span><h2>Kurta Tops</h2><p>Everyday wearable art</p><b>Enquire <i aria-hidden="true">→</i></b></a>
+          <a class="category-card" href="#custom-order"><span>04</span><h2>Churidar Sets</h2><p>Complete hand-painted looks</p><b>Enquire <i aria-hidden="true">→</i></b></a>
+          <a class="category-card" href="#custom-order"><span>05</span><h2>Silk Scarves</h2><p>Small canvases, made personal</p><b>Enquire <i aria-hidden="true">→</i></b></a>
+        </div>
       </section>
 
+      <section class="featured section-shell" aria-labelledby="featured-title">
+        <div class="section-heading"><div><p class="eyebrow">The current edit</p><h2 id="featured-title">One of a kind,<br />like you.</h2></div><p>Every Nilouh piece is painted by hand. No mass production, no rushed creation.</p></div>
+        <div class="product-grid">
+          <article class="product-card"><div class="product-image image-frame"><img src="images/gulnar-kurta.jpg" alt="Gulnar hand-painted cotton kurta" loading="lazy" /><div class="missing-image">Add <strong>gulnar-kurta.jpg</strong></div></div><div class="product-copy"><h3>Gulnar Kurta</h3><p>Hand-painted cotton</p></div><a class="text-action" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire about this piece <span aria-hidden="true">↗</span></a></article>
+          <article class="product-card"><div class="product-image image-frame"><img src="images/neel-coord.jpg" alt="Neel hand-painted linen co-ord set" loading="lazy" /><div class="missing-image">Add <strong>neel-coord.jpg</strong></div></div><div class="product-copy"><h3>Neel Co-ord Set</h3><p>Hand-painted linen</p></div><a class="text-action" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire about this piece <span aria-hidden="true">↗</span></a></article>
+          <article class="product-card"><div class="product-image image-frame"><img src="images/raahi-dupatta.jpg" alt="Raahi hand-painted chanderi dupatta" loading="lazy" /><div class="missing-image">Add <strong>raahi-dupatta.jpg</strong></div></div><div class="product-copy"><h3>Raahi Dupatta</h3><p>Hand-painted chanderi</p></div><a class="text-action" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire about this piece <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
 
-      <section id="collection" class="shop-categories section"><div class="category-heading"><p class="eyebrow">Shop Nilouh</p><h2>Find your<br />rare piece.</h2><p>Explore hand-painted clothing made with softness, craftsmanship and stories made to last.</p></div><div class="category-grid"><a class="category-card category-sarees" href="sarees.html"><span>01</span><h3>Sarees</h3><p>Hand-painted drapes</p><b>Explore →</b></a><a class="category-card category-dupattas" href="#dupattas"><span>02</span><h3>Dupattas &amp; Stoles</h3><p>Artful finishing touches</p><b>Explore →</b></a><a class="category-card category-tops" href="#tops"><span>03</span><h3>Churidar &amp; Kurta Tops</h3><p>Everyday wearable art</p><b>Explore →</b></a><a class="category-card category-sets" href="#sets"><span>04</span><h3>Churidar Sets</h3><p>Complete hand-painted looks</p><b>Explore →</b></a><a class="category-card category-scarves" href="#scarves"><span>05</span><h3>Silk Scarves</h3><p>Small canvases, made personal</p><b>Explore →</b></a></div></section>
+      <section id="story" class="story section-shell" aria-labelledby="story-title">
+        <div class="story-art" aria-hidden="true"></div>
+        <div class="story-copy"><p class="eyebrow">Brand story</p><h2 id="story-title">Because some things deserve to exist only once.</h2><p>Nilouh Story was born from a shared love for art, textiles and timeless beauty. Created by a daughter, mother and aunt, it grew from quiet afternoons of painting and draping fabrics.</p><p>Inspired by the softness of the blue water lily, each piece brings together hand-painted artistry, beautiful fabric and thoughtful craftsmanship.</p><a class="text-action" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Meet the makers <span aria-hidden="true">↗</span></a></div>
+      </section>
 
-      <section class="collection section"><div class="collection-head"><div><p class="eyebrow">The current edit</p><h2>One of a kind,<br />like you.</h2></div><p>Each Nilouh piece is painted by skilled artists. No mass production. No rushed creation.</p></div><div class="products">
-        <article class="product"><div class="product-image image-frame blue"><img src="images/gulnar-kurta.jpg" alt="Gulnar hand-painted kurta" /><div class="missing-image">Add <strong>gulnar-kurta.jpg</strong></div></div><div class="product-meta"><div><h3>Gulnar Kurta</h3><p>Hand-painted cotton</p></div></div><button class="enquire" data-product="Gulnar Kurta">Enquire about this piece <span>↗</span></button></article>
-        <article class="product"><div class="product-image image-frame sage"><img src="images/neel-coord.jpg" alt="Neel hand-painted co-ord set" /><div class="missing-image">Add <strong>neel-coord.jpg</strong></div></div><div class="product-meta"><div><h3>Neel Co-ord Set</h3><p>Hand-painted linen</p></div></div><button class="enquire" data-product="Neel Co-ord Set">Enquire about this piece <span>↗</span></button></article>
-        <article class="product"><div class="product-image image-frame rose"><img src="images/raahi-dupatta.jpg" alt="Raahi hand-painted dupatta" /><div class="missing-image">Add <strong>raahi-dupatta.jpg</strong></div></div><div class="product-meta"><div><h3>Raahi Dupatta</h3><p>Hand-painted chanderi</p></div></div><button class="enquire" data-product="Raahi Dupatta">Enquire about this piece <span>↗</span></button></article>
-      </div></section>
+      <section id="custom-order" class="custom-order section-shell" aria-labelledby="custom-title">
+        <div class="section-kicker"><span>02</span><p>Made with you</p></div>
+        <div class="custom-order__grid"><div><h2 id="custom-title">A piece made<br />for your story.</h2><p>Love a motif, colour or fabric idea? We welcome thoughtful custom enquiries through Instagram.</p><a class="button" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Start an enquiry <span aria-hidden="true">↗</span></a></div><ol class="process"><li><span>01</span><div><h3>Share your idea</h3><p>Send us a message with your occasion, preferred piece and inspiration.</p></div></li><li><span>02</span><div><h3>Shape the details</h3><p>We discuss fabric, painting, colours and the details that make it yours.</p></div></li><li><span>03</span><div><h3>Made slowly</h3><p>Your piece is hand-painted with care, then prepared for its journey to you.</p></div></li></ol></div>
+      </section>
 
-      <section id="craft" class="values section"><p class="eyebrow">The Nilouh promise</p><div class="value-grid"><div><span>◒</span><h3>Our vision</h3><p>To create timeless wearable art that celebrates individuality, femininity, craftsmanship and the beauty of slow handmade fashion.</p></div><div><span>✿</span><h3>Our mission</h3><p>To craft delicate, artistic textiles by hand—transforming fabrics into meaningful heirloom pieces that allow women to wear elegance in their own unique way.</p></div><div><span>♡</span><h3>Our values</h3><ul><li>Slow fashion</li><li>Handcrafted artistry</li><li>Individuality</li><li>Women-led craftsmanship</li><li>Timeless elegance</li><li>Intentional luxury</li><li>Emotional connection</li></ul></div><div><span>✿</span><h3>We create</h3><p>Hand-painted sarees, dupattas, stoles, salwar sets, silk scarves, and later: tie &amp; dye, block prints, &amp; more.</p></div><div><span>◇</span><h3>What makes us unique</h3><p>One-of-a-kind pieces, hand-painted by skilled artists, in premium natural fabrics. Limited creations made with love, patience and perfection.</p></div><div><span>♙</span><h3>For whom</h3><p>For the woman who chooses meaning over trends, quality over quantity and artistry over ordinary.</p></div></div></section>
+      <section id="craft" class="values section-shell" aria-labelledby="values-title">
+        <div class="section-heading"><div><p class="eyebrow">The Nilouh promise</p><h2 id="values-title">Made with<br />intention.</h2></div><p>Quiet luxury, expressed through art, fabric and time.</p></div>
+        <div class="value-grid"><article><span aria-hidden="true">✦</span><h3>Hand-painted</h3><p>Every motif is painted by skilled artists, so no two pieces are the same.</p></article><article><span aria-hidden="true">◇</span><h3>Limited creations</h3><p>Small batches keep every collection personal and considered.</p></article><article><span aria-hidden="true">✿</span><h3>Premium fabrics</h3><p>Breathable, graceful fabrics selected for the way they feel and drape.</p></article><article><span aria-hidden="true">♡</span><h3>Women-led craft</h3><p>Created by women who believe elegance should feel deeply personal.</p></article></div>
+      </section>
 
-      <section class="closing"><p>Wear your own story.</p><h2>Made for the woman<br />who feels deeply.</h2><a class="button light" href="mailto:hello@nilouh.com?subject=Nilouh%20enquiry">Start a conversation <span>↗</span></a></section>
+      <section id="faq" class="faq section-shell" aria-labelledby="faq-title">
+        <div><p class="eyebrow">Helpful details</p><h2 id="faq-title">Before you<br />enquire.</h2></div>
+        <div class="faq-list"><details><summary>Are all Nilouh pieces one of a kind?<span aria-hidden="true">+</span></summary><p>Yes. Since every motif is painted by hand, small variations are part of each piece’s individuality.</p></details><details><summary>How do I place an order?<span aria-hidden="true">+</span></summary><p>Tap any Enquire button to message us on Instagram. We will share availability, sizing and order details with you personally.</p></details><details><summary>Can I request a custom piece?<span aria-hidden="true">+</span></summary><p>Yes. Tell us your occasion, preferred garment and inspiration through Instagram, and we will let you know what is possible.</p></details><details><summary>How should I care for hand-painted fabric?<span aria-hidden="true">+</span></summary><p>Hand wash separately in cold water, dry in shade and iron inside out to care for the fabric and painted artwork.</p></details></div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title"><p>For the rare you.</p><h2 id="closing-title">Wear your own story.</h2><a class="button button--light" href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Enquire on Instagram <span aria-hidden="true">↗</span></a></section>
     </main>
-    <footer><img src="images/nilouh-story-logo.jpg" alt="Nilouh Story" /><div><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><p>© <span id="year"></span> Nilouh Story · For the rare you.</p></div></footer>
+
+    <footer class="site-footer"><div class="footer-brand"><img src="images/nilouh-story-logo.jpg" alt="Nilouh Story" /><p>Hand-painted wearable art, made slowly.</p></div><nav aria-label="Footer navigation"><a href="#collection">Shop</a><a href="#story">Our story</a><a href="#custom-order">Custom order</a><a href="#faq">FAQ</a></nav><div class="footer-contact"><a href="https://www.instagram.com/nilouh.story?igsh=MXhwOWQxM3IzNGx6aw==" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a><p>© <span id="year"></span> Nilouh Story</p></div></footer>
     <script src="script.js"></script>
   </body>
 </html>

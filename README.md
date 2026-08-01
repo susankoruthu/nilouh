@@ -18,6 +18,16 @@ The page will show a calm coloured placeholder until each photo is added. You ca
 
 In `index.html`, update each product's name, fabric description, and price. Change `hello@nilouh.com` to your actual customer email address (or leave it if you use that address).
 
-## Publish
+## Active site files
 
-Replace the files in your GitHub repository with this folder's contents. GitHub Pages will redeploy automatically in a minute or two.
+Upload these files to the root of your GitHub repository:
+
+- `index.html`
+- `sarees.html`
+- `style.css`
+- `script.js`
+- `robots.txt`
+- `sitemap.xml`
+- the complete `images` folder
+
+The stylesheet is now consolidated into `style.css`; delete the old fragment CSS files from GitHub if they are still there. GitHub Pages will redeploy automatically in a minute or two.
