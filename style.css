@@ -73,3 +73,45 @@ main { display:flex; flex-direction:column; }
 .featured .section-heading { margin-bottom:18px; }
 .featured .section-heading h2 { font-size:clamp(28px,3vw,42px); }
 .featured .section-heading > p { font-size:11px; }
+
+/* Responsive layout safeguards — kept last so they override earlier desktop rules. */
+html, body { max-width:100%; overflow-x:clip; }
+main, .site-header, .header-inner, .section-shell, .site-footer, .product-grid, .collection-products { min-width:0; }
+
+@media (max-width:640px) {
+  .announcement { padding:8px 16px; font-size:9px; line-height:1.45; letter-spacing:.08em; }
+  .header-inner { min-height:72px; gap:12px; padding-left:20px; padding-right:20px; }
+  .brand img { width:48px; height:48px; }
+  .menu-toggle { min-height:44px; margin-left:auto; padding:10px 4px 10px 12px; }
+  .header-cta { min-width:116px; min-height:42px; padding:0 12px; font-size:9px; }
+  .site-nav { padding-left:20px; padding-right:20px; }
+
+  .category-grid { overscroll-behavior-inline:contain; scroll-snap-type:inline proximity; }
+  .category-card { scroll-snap-align:start; }
+
+  .featured { padding-top:22px; padding-bottom:48px; }
+  .featured .section-heading { display:grid; gap:13px; margin-bottom:24px; }
+  .featured .section-heading h2 { font-size:clamp(30px,9vw,39px); line-height:1; }
+  .featured .section-heading > p { max-width:30rem; margin:0; font-size:12px; line-height:1.55; }
+
+  .product-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); gap:28px 14px; }
+  .product-card { min-width:0; }
+  .product-image { aspect-ratio:3 / 4; }
+  .product-copy { padding:11px 0 7px; }
+  .product-copy h3 { font-size:20px; line-height:1.02; letter-spacing:-.035em; }
+  .product-copy p { font-size:10px; line-height:1.45; }
+  .product-card .text-action { gap:5px; font-size:8px; line-height:1.35; }
+
+  .story-art { min-height:240px; }
+  .story-copy { padding-top:30px; }
+  .custom-order__grid { gap:32px; }
+  .collection-page { padding-left:20px; padding-right:20px; }
+  .collection-products { grid-template-columns:1fr; gap:38px; }
+}
+
+@media (max-width:380px) {
+  .header-inner { gap:8px; }
+  .header-cta { min-width:104px; padding:0 10px; }
+  .product-grid { gap:24px 12px; }
+  .product-copy h3 { font-size:18px; }
+}
