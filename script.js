@@ -45,6 +45,10 @@ if (raahiDupattaCard) {
     ?.remove();
 });
 
+[...document.querySelectorAll('.collection-product')]
+  .find((card) => card.querySelector('img[alt="Gulnar hand-painted cotton kurta"]'))
+  ?.remove();
+
 const neelSetCard = [...document.querySelectorAll('.collection-product')].find(
   (card) => card.querySelector('h2')?.textContent.trim() === 'Neel Set',
 );
