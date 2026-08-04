@@ -115,3 +115,27 @@ main, .site-header, .header-inner, .section-shell, .site-footer, .product-grid, 
   .product-grid { gap:24px 12px; }
   .product-copy h3 { font-size:18px; }
 }
+
+.breadcrumbs { display:flex; flex-wrap:wrap; gap:9px; align-items:center; margin:0 0 14px; color:var(--blue); font:10px "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
+.breadcrumbs a { color:var(--blue); text-decoration:underline; text-decoration-color:transparent; text-underline-offset:4px; transition:color .2s ease,text-decoration-color .2s ease; }
+.breadcrumbs a:hover,.breadcrumbs a:focus-visible { color:var(--indigo); text-decoration-color:currentColor; }
+.breadcrumbs [aria-current="page"] { color:var(--indigo); }
+.collection-product .product-note { margin:0 0 14px; color:var(--muted); font-size:11px; line-height:1.55; }
+
+/* Compact collection introductions so the products appear sooner on every subpage. */
+.collection-page { padding-top:24px; }
+.collection-page__intro { max-width:620px; }
+.collection-page__intro h1 { font-size:clamp(38px,3.8vw,52px); line-height:.94; }
+.collection-page__intro > p:last-child { max-width:540px; margin:10px 0 0; line-height:1.48; }
+.collection-page .back-link { margin:12px 0 18px; }
+
+@media (min-width:641px) {
+  .collection-page__intro h1 { white-space:nowrap; }
+}
+
+@media (max-width:640px) {
+  .collection-page { padding-top:22px; }
+  .collection-page__intro h1 { font-size:clamp(32px,9vw,40px); }
+  .collection-page__intro > p:last-child { margin-top:9px; }
+  .collection-page .back-link { margin:11px 0 18px; }
+}
