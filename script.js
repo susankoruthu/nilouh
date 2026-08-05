@@ -90,6 +90,43 @@ if (menuButton && navigation) {
   }));
 }
 
+const shopLink = [...document.querySelectorAll('.site-nav > a')].find(
+  (link) => link.textContent.trim().toLowerCase() === 'shop',
+);
+if (shopLink) {
+  const shopMenu = document.createElement('div');
+  shopMenu.className = 'shop-menu';
+  shopMenu.innerHTML = `<a href="sarees.html">Sarees</a><a href="dupattas.html">Dupattas &amp; Stoles</a><a href="kurta-tops.html">Kurta Tops</a><a href="churidar-sets.html">Churidar Sets</a><a href="silk-scarves.html">Silk Scarves</a>`;
+
+  const shopMenuItem = document.createElement('div');
+  shopMenuItem.className = 'shop-menu-item';
+  shopLink.parentNode.insertBefore(shopMenuItem, shopLink);
+  shopMenuItem.append(shopLink, shopMenu);
+  shopLink.setAttribute('aria-haspopup', 'true');
+  shopLink.setAttribute('aria-expanded', 'false');
+
+  const closeShopMenu = () => {
+    shopMenuItem.classList.remove('is-open');
+    shopLink.setAttribute('aria-expanded', 'false');
+  };
+  const openShopMenu = () => {
+    shopMenuItem.classList.add('is-open');
+    shopLink.setAttribute('aria-expanded', 'true');
+  };
+
+  shopMenuItem.addEventListener('mouseenter', openShopMenu);
+  shopMenuItem.addEventListener('mouseleave', closeShopMenu);
+  shopMenuItem.addEventListener('focusin', openShopMenu);
+  shopMenuItem.addEventListener('focusout', (event) => {
+    if (!shopMenuItem.contains(event.relatedTarget)) closeShopMenu();
+  });
+  shopLink.addEventListener('click', (event) => {
+    if (!window.matchMedia('(max-width: 640px)').matches) return;
+    event.preventDefault();
+    shopMenuItem.classList.contains('is-open') ? closeShopMenu() : openShopMenu();
+  });
+}
+
 const categoryTooltip = document.createElement('div');
 categoryTooltip.className = 'category-tooltip';
 categoryTooltip.setAttribute('role', 'tooltip');
